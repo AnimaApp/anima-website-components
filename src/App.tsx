@@ -7,10 +7,11 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
+import { AnCard } from "./components/atoms"
+import theme from "./theme"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -22,6 +23,7 @@ export const App = () => (
           <Text>
             Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
           </Text>
+          <AnCard title="Frontend Development Automation" dividerVariant="solidRed">Click</AnCard>
           <Link
             color="teal.500"
             href="https://chakra-ui.com"
