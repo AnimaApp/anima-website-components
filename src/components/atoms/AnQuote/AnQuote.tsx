@@ -31,6 +31,7 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
       padding={"clamp(3rem, 15vw, 1rem) clamp(3rem, 15vw, 7rem)"}
       w="100%"
       color="var(--white)"
+      rounded="20px"
     >
       <Flex alignItems={"stretch"} gap={8}>
         <Box borderRadius={"100px"} borderLeft={"6px solid var(--amber-7)"} />
@@ -39,7 +40,7 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
             {text}
           </Heading>
           {author && (
-            <Box w="100%">
+            <Box fontFamily={'Mulish'} w="100%">
               <HStack gap={4}>
                 <Box>
                   <Image
@@ -50,10 +51,10 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
                   />
                 </Box>
                 <Box>
-                  <Text as="b" mt={2}>
+                  <Text fontWeight={800} mt={2}>
                     {author.name}
                   </Text>
-                  <Text mt={1}>{author.title}</Text>
+                  <Text fontWeight={400} mt={1}>{author.title}</Text>
                 </Box>
               </HStack>
             </Box>

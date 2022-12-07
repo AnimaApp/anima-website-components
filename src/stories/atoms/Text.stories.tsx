@@ -1,16 +1,30 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { getThemingArgTypes } from "@chakra-ui/storybook-addon";
-import { Text, ThemingProps, theme } from "@chakra-ui/react";
-
+import { Text, ThemingProps } from "@chakra-ui/react";
 
 export default {
   title: "Anima/Atoms/Text",
   // get controls for `variant`, `size` and `colorScheme`
-  argTypes: getThemingArgTypes(theme, "Button"),
+  argTypes: {
+    fontSize: {
+      type: { name: "string", required: false },
+      control: "select",
+      options: [
+        "6xl",
+        "5xl",
+        "4xl",
+        "3xl",
+        "2xl",
+        "xl",
+        "lg",
+        "md",
+        "sm",
+        "xs",
+      ],
+    },
+  },
 } as Meta;
 
 interface StoryProps extends ThemingProps<"Text"> {}
-
 export const Basic: StoryFn<StoryProps> = (props) => (
   <Text {...props}>Text</Text>
 );

@@ -3,6 +3,8 @@ import { Global } from "@emotion/react";
 const Fonts = () => (
   <Global
     styles={`
+      @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
       @font-face {
         src: url("./fonts/Roslindale-DeckNarrowRegular.eot"); /* IE < 9 */
         src: url("./fonts/Roslindale-DeckNarrowRegular.eot?#")

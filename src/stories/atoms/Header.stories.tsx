@@ -6,7 +6,7 @@ import { Heading, ThemingProps, theme } from "@chakra-ui/react";
 export default {
   title: "Anima/Atoms/Heading",
   // get controls for `variant`, `size` and `colorScheme`
-  argTypes: getThemingArgTypes(theme, "Button"),
+  argTypes: getThemingArgTypes(theme, "Heading"),
 } as Meta;
 
 interface StoryProps extends ThemingProps<"Heading"> {}
