@@ -9,6 +9,7 @@ import {
   Box,
   HStack,
 } from "@chakra-ui/react";
+import { HighlitghtIcon } from "../Icons";
 
 type AnButtonProps = {
   variant?: "filled" | "highlighted";
@@ -30,14 +31,14 @@ export const AnCard = ({
 
   useEffect(() => {
     switch (dividerSize) {
-      case 'sm':
-        setDividerWidth(30);
+      case "sm":
+        setDividerWidth(40);
         break;
-      case 'md':
-        setDividerWidth(50);
+      case "md":
+        setDividerWidth(60);
         break;
-      case 'lg':
-        setDividerWidth(75);
+      case "lg":
+        setDividerWidth(80);
         break;
       default:
         setDividerWidth(100);
@@ -46,8 +47,19 @@ export const AnCard = ({
   }, [dividerSize]);
 
   return (
-    <Card variant={variant} maxW="md" rounded="20px">
-      <CardHeader>
+    <Card variant={variant} maxW="md" rounded="20px" position={"relative"}>
+      {variant === "highlighted" && (
+        <>
+          <HighlitghtIcon position={"absolute"} top={"-50px"} right={"-50px"} />
+          <HighlitghtIcon
+            position={"absolute"}
+            bottom={"-50px"}
+            left={"-50px"}
+            transform={"rotate(180deg)"}
+          />
+        </>
+      )}
+      <CardHeader roundedTop={"20px"}>
         <HStack>
           <Heading size="lg">{title}</Heading>
           {titleImgUrl && (
@@ -56,7 +68,7 @@ export const AnCard = ({
         </HStack>
       </CardHeader>
       {dividerVariant && (
-        <Box w={`${dividerWidth}%`} p="0 20px">
+        <Box w={`${dividerWidth}%`} p="0 40px">
           <Divider variant={dividerVariant} />
         </Box>
       )}

@@ -6,7 +6,6 @@ import {
   Flex,
   Text,
   Image,
-  Divider,
 } from "@chakra-ui/react";
 
 type AnQuoteAuthorProps = {
@@ -29,21 +28,12 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
   return (
     <Box
       bg="var(--secondary)"
-      h="300px"
+      padding={"clamp(3rem, 15vw, 1rem) clamp(3rem, 15vw, 7rem)"}
       w="100%"
-      padding={'80px 150px'}
       color="var(--white)"
     >
-      <Flex gap={6} height={'100%'}>
-        <Divider
-          borderRadius={"100px"}
-          borderLeftWidth={0}
-          opacity={1}
-          w={"6px"}
-          alignSelf="stretch"
-          backgroundColor="var(--amber-8)"
-          orientation="vertical"
-        />
+      <Flex alignItems={"stretch"} gap={8}>
+        <Box borderRadius={"100px"} borderLeft={"6px solid var(--amber-7)"} />
         <VStack>
           <Heading as="h2" size="lg" mb={4}>
             {text}
@@ -69,7 +59,7 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
             </Box>
           )}
           {article && (
-            <Box w="100%" color={"var(--amber-8)"}>
+            <Box w="100%" color={"var(--amber-7)"}>
               <Text as="b" mt={2}>
                 {article.title}
               </Text>

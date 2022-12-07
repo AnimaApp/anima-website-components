@@ -11,10 +11,12 @@ import {
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { AnCard } from "./components/atoms"
+import Fonts from "./fonts"
 import theme from "./theme"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    <Fonts />
     <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />

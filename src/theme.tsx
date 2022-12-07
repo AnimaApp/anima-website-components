@@ -3,6 +3,17 @@ import { extendTheme } from "@chakra-ui/react";
 import "@animaapp/anima-design-tokens/dist/tokens.css";
 
 const theme = extendTheme({
+  fonts: {
+    heading: `'Roslindale', sans-serif`,
+    body: `'Roslindale', sans-serif`,
+  },
+  styles: {
+    global: {
+      body: {
+        color: "var(--white)",
+      },
+    },
+  },
   components: {
     Button: {
       baseStyle: {
@@ -83,7 +94,7 @@ const theme = extendTheme({
           container: {
             border: "1px solid var(--white)",
             bg: "var(--secondary)",
-            overflow: 'hidden',
+            margin: "20px",
           },
           header: {
             bg: "var(--white)",
