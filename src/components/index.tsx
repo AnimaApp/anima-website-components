@@ -1,3 +1,4 @@
+export { AnAccordion } from "./AnAccordion/AnAccordion";
 export { AnButton } from "./AnButton/AnButton";
 export { AnCard } from "./AnCard/AnCard";
 export { AnFeatureList } from "./AnFeatureList/AnFeatureList";
