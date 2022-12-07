@@ -1,10 +1,10 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Image, Heading, Text, Stack } from "@chakra-ui/react";
 
-import { AnCard, AnFeatureList } from "../../components/atoms";
+import { AnCard, AnFeatureList } from "../components";
 
 export default {
-  title: "Anima/Atoms/AnCard",
+  title: "Anima/AnCard",
   component: AnCard,
   argTypes: {},
 } as ComponentMeta<typeof AnCard>;

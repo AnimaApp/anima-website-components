@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
-import { AnCard } from "./components/atoms"
+import { AnCard } from "./components"
 import Fonts from "./fonts"
 import theme from "./theme"
 

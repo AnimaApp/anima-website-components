@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { AnFeatureList } from "../../components/atoms";
+import { AnFeatureList } from "../components";
 
 export default {
-  title: "Anima/Atoms/AnFeatureList",
+  title: "Anima/AnFeatureList",
   component: AnFeatureList,
   argTypes: {},
 } as ComponentMeta<typeof AnFeatureList>;

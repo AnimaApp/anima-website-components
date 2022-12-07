@@ -4,7 +4,7 @@ import { Heading, ThemingProps, theme } from "@chakra-ui/react";
 
 
 export default {
-  title: "Anima/Atoms/Heading",
+  title: "Anima/Header",
   // get controls for `variant`, `size` and `colorScheme`
   argTypes: getThemingArgTypes(theme, "Heading"),
 } as Meta;

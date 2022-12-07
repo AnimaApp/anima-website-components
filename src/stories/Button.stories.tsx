@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { AnButton } from "../../components/atoms";
+import { AnButton } from "../components";
 
 export default {
-  title: "Anima/Atoms/AnButton",
+  title: "Anima/AnButton",
   component: AnButton,
   argTypes: {},
 } as ComponentMeta<typeof AnButton>;

@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { AnMenu } from "../../components/atoms";
+import { AnMenu } from "../components";
 
 export default {
-  title: "Anima/Atoms/AnMenu",
+  title: "Anima/AnMenu",
   component: AnMenu,
   argTypes: {},
 } as ComponentMeta<typeof AnMenu>;

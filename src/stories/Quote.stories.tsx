@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { AnQuote } from "../../components/atoms";
+import { AnQuote } from "../components";
 
 export default {
-  title: "Anima/Atoms/AnQuote",
+  title: "Anima/AnQuote",
   component: AnQuote,
   argTypes: {},
 } as ComponentMeta<typeof AnQuote>;

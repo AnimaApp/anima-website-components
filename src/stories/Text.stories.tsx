@@ -2,7 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { Text, ThemingProps } from "@chakra-ui/react";
 
 export default {
-  title: "Anima/Atoms/Text",
+  title: "Anima/Text",
   // get controls for `variant`, `size` and `colorScheme`
   argTypes: {
     fontSize: {
