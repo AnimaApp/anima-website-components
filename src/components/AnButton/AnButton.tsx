@@ -1,8 +1,8 @@
-import { Button } from "@chakra-ui/react";
+import { Button } from '@mantine/core';
 
 type AnButtonProps = {
   children: React.ReactNode;
-  variant?: "solid" | "outline" | "ghost" | "link" | "unstyled";
+  variant?: "filled" | "light" | "outline" | "default" | "subtle";
 };
 export const AnButton = ({ children, variant }: AnButtonProps) => {
   return <Button variant={variant}>{children}</Button>;

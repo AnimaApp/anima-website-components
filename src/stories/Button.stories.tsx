@@ -26,5 +26,5 @@ Outlined.args = {
 export const Link = Template.bind({});
 Link.args = {
   children: "Button",
-  variant: "link",
+  variant: "subtle",
 };

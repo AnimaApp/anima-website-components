@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "Text.stories.tsx", ".storybook/fonts.tsx", "Accordion.stories.tsx", "AnAccordion", "Accordion.stories.tsx", ".storybook/theme.tsx", ".storybook/theme.tsx", ".storybook/fonts.tsx", "Text.stories.tsx"  ]
 }

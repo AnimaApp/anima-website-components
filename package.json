@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "@animaapp/anima-design-tokens": "^0.0.10",
-    "@chakra-ui/icons": "^2.0.13",
-    "@chakra-ui/react": "^2.4.2",
-    "@emotion/react": "^11.0.0",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.0.0",
+    "@mantine/core": "^5.9.2",
+    "@mantine/hooks": "^5.9.2",
+    "@tabler/icons": "^1.116.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.0",
@@ -60,7 +61,6 @@
     ]
   },
   "devDependencies": {
-    "@chakra-ui/storybook-addon": "^4.0.14",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
     "@storybook/addon-interactions": "^6.5.14",
