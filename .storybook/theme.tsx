@@ -1,12 +1,32 @@
-import type { MantineThemeOverride, ButtonStylesParams } from "@mantine/core";
+import type {
+  MantineThemeOverride,
+  ButtonStylesParams,
+  TitleStylesParams,
+  TextStylesParams,
+} from "@mantine/core";
 
 import "@animaapp/anima-design-tokens/dist/tokens.css";
 
 export const theme: MantineThemeOverride = {
   fontFamily: `'Roslindale', sans-serif`,
   components: {
+    Text: {
+      styles: (theme, params: TextStylesParams) => ({
+        root: {
+          color: "var(--white)",
+          fontFamily: `'Roslindale', sans-serif`,
+        },
+      }),
+    },
+    Title: {
+      styles: (theme, params: TitleStylesParams) => ({
+        root: {
+          color: "var(--white)",
+          fontFamily: `'Roslindale', sans-serif`,
+        },
+      }),
+    },
     Button: {
-      // Subscribe to theme and component params
       styles: (theme, params: ButtonStylesParams) => ({
         root: {
           fontWeight: 400,
