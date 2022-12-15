@@ -1,7 +1,7 @@
-import { Container, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 
 type AnTitleProps = {
-  children: React.ReactNode;
+  label: string;
   align?:
     | "left"
     | "right"
@@ -20,6 +20,6 @@ type AnTitleProps = {
   weight?: string;
   italic?: boolean;
 };
-export const AnTitle = ({ children, ...props }: AnTitleProps) => {
-  return <Title {...props}>{children}</Title>;
+export const AnTitle = ({ label, ...props }: AnTitleProps) => {
+  return <Title {...props}>{label}</Title>;
 };

@@ -4,7 +4,13 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 export default {
   title: "Anima/AnTitle",
   component: AnTitle,
-  argTypes: {},
+  argTypes: {
+    label: {
+      control: {
+        type: "text",
+      },
+    },
+  },
 } as ComponentMeta<typeof AnTitle>;
 
 const Template: ComponentStory<typeof AnTitle> = (args) => (
@@ -12,5 +18,5 @@ const Template: ComponentStory<typeof AnTitle> = (args) => (
 );
 export const Header = Template.bind({});
 Header.args = {
-  children: "Title",
+  label: "Title",
 };

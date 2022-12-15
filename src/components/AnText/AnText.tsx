@@ -1,7 +1,7 @@
 import { Text } from "@mantine/core";
 
 type AnTextProps = {
-  children: React.ReactNode;
+  text: string;
   order?: 1 | 2 | 3 | 4 | 5 | 6;
   align?:
     | "left"
@@ -20,6 +20,6 @@ type AnTextProps = {
   weight?: string;
   italic?: boolean;
 };
-export const AnText = ({ children, ...props }: AnTextProps) => {
-  return <Text {...props}>{children}</Text>;
+export const AnText = ({ text, ...props }: AnTextProps) => {
+  return <Text {...props}>{text}</Text>;
 };
