@@ -5,7 +5,14 @@ import { AnButton } from "../components";
 export default {
   title: "Anima/AnButton",
   component: AnButton,
-  argTypes: {},
+  argTypes: {
+    variant: {
+      control: {
+        type: "select",
+        options: ["filled", "light", "outline", "default", "subtle"],
+      },
+    },
+  },
 } as ComponentMeta<typeof AnButton>;
 
 const Template: ComponentStory<typeof AnButton> = (args) => (

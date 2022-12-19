@@ -1,22 +1,14 @@
 import { Box, Title, Flex, Text, Avatar } from "@mantine/core";
 
-type AnQuoteAuthorProps = {
-  name: string;
-  title: string;
-  profileImageUrl?: string;
-};
-
-type AnQuoteArticleProps = {
-  title: string;
-  date: string;
-};
-
 type AnQuoteProps = {
   text: React.ReactNode;
-  author?: AnQuoteAuthorProps;
-  article?: AnQuoteArticleProps;
+  authorName: string;
+  authorTitle: string;
+  authorProfileImageUrl?: string;
+  articleTitle: string;
+  articleDate: string;
 };
-export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
+export const AnQuote = ({ text, authorName, authorTitle, authorProfileImageUrl, articleTitle, articleDate }: AnQuoteProps) => {
   return (
     <Box
       sx={(theme) => ({
@@ -45,7 +37,7 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
           >
             {text}
           </Title>
-          {author && (
+          {authorName && (
             <Box
               sx={(theme) => ({
                 fontFamily: "Mulish",
@@ -55,8 +47,8 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
                 <Box>
                   <Avatar
                     radius="xl"
-                    src={author.profileImageUrl}
-                    alt={author.name}
+                    src={authorProfileImageUrl}
+                    alt={authorName}
                   />
                 </Box>
                 <Box>
@@ -67,7 +59,7 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
                       marginTop: 2,
                     })}
                   >
-                    {author.name}
+                    {authorName}
                   </Text>
                   <Text
                     size={16}
@@ -76,23 +68,23 @@ export const AnQuote = ({ text, author, article }: AnQuoteProps) => {
                       marginTop: 1,
                     })}
                   >
-                    {author.title}
+                    {authorTitle}
                   </Text>
                 </Box>
               </Flex>
             </Box>
           )}
-          {article && (
+          {articleTitle && (
             <Box
               sx={(theme) => ({
                 color: "var(--amber-7)",
               })}
             >
               <Text size={16} weight={700} mt={2}>
-                {article.title}
+                {articleTitle}
               </Text>
               <Text size={16} mt={1}>
-                {article.date}
+                {articleDate}
               </Text>
             </Box>
           )}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   createStyles,
   Header,
@@ -37,7 +38,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 500,
     fontSize: theme.fontSizes.sm,
 
-    [theme.fn.smallerThan("sm")]: {
+    [theme.fn.smallerThan("md")]: {
       height: 42,
       display: "flex",
       alignItems: "center",
@@ -88,7 +89,13 @@ export const AnMenu = ({ logoUrl, logoLink, sections }: AnMenuProps) => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
+  const [activeLink, setActiveLink] = useState("");
   const { classes } = useStyles();
+
+  const clickToggle = (label: string | undefined) => {
+    toggleLinks();
+    setActiveLink(label || "");
+  };
 
   const links = (items: AnMenuSectionItemProps[]) =>
     items.map((item) => (
@@ -133,7 +140,6 @@ export const AnMenu = ({ logoUrl, logoLink, sections }: AnMenuProps) => {
             {sections.map((section) =>
               section.items ? (
                 <HoverCard
-                  width={600}
                   position="bottom"
                   radius="md"
                   shadow="md"
@@ -207,12 +213,15 @@ export const AnMenu = ({ logoUrl, logoLink, sections }: AnMenuProps) => {
           {sections.map((section) =>
             section.items ? (
               <>
-                <UnstyledButton className={classes.link} onClick={toggleLinks}>
+                <UnstyledButton
+                  className={classes.link}
+                  onClick={() => clickToggle(section.label)}
+                >
                   <Center inline>
                     <Box component="span" mr={5}>
                       {section.label}
                     </Box>
-                    {linksOpened ? (
+                    {linksOpened && activeLink === section.label ? (
                       <IconChevronUp size={16} color={"var(--white)"} />
                     ) : (
                       <IconChevronDown size={16} color={"var(--white)"} />
@@ -220,7 +229,7 @@ export const AnMenu = ({ logoUrl, logoLink, sections }: AnMenuProps) => {
                   </Center>
                 </UnstyledButton>
                 <Collapse
-                  in={linksOpened}
+                  in={linksOpened && activeLink === section.label}
                   sx={{
                     backgroundColor: "var(--secondary)",
                     borderRadius: "25px",

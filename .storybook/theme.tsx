@@ -26,6 +26,13 @@ export const theme: MantineThemeOverride = {
         },
       }),
     },
+    HoverCard: {
+      styles: (theme) => ({
+        root: {
+          padding: "15px",
+        },
+      }),
+    },
     Button: {
       styles: (theme, params: ButtonStylesParams) => ({
         root: {
