@@ -10,13 +10,31 @@ export default {
         type: "text",
       },
     },
+    size: {
+      control: {
+        type: "select",
+        options: ["h1", "h2", "h3", "h4", "h5", "h6"],
+      },
+    },
+    weight: {
+      control: {
+        type: "select",
+        options: ["light", "regular", "medium", "semibold", "bold"],
+      },
+    },
+    align: {
+      control: {
+        type: "select",
+        options: ["left", "center", "right"],
+      },
+    },
   },
 } as ComponentMeta<typeof AnTitle>;
 
 const Template: ComponentStory<typeof AnTitle> = (args) => (
   <AnTitle {...args} />
 );
-export const Header = Template.bind({});
-Header.args = {
+export const Default = Template.bind({});
+Default.args = {
   label: "Title",
 };

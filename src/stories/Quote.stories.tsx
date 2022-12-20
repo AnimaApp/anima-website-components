@@ -6,12 +6,6 @@ export default {
   title: "Anima/AnQuote",
   component: AnQuote,
   argTypes: {
-    dividerSize: {
-      control: {
-        type: "select",
-        options: ["sm", "md", "lg", "xl", null],
-      },
-    },
     authorProfileImageUrl: {
       control: {
         type: "file",
@@ -24,8 +18,8 @@ const Template: ComponentStory<typeof AnQuote> = (args) => (
   <AnQuote {...args} />
 );
 
-export const QuoteAuthor = Template.bind({});
-QuoteAuthor.args = {
+export const Default = Template.bind({});
+Default.args = {
   text: "“Anima just turned any backend developer to a fullstack, and will save precious time to production.”",
   authorName: "Amit Ben",
   authorTitle: "CEO @ OneAI.com",

@@ -10,8 +10,8 @@ export default {
 
 const Template: ComponentStory<typeof AnMenu> = (args) => <AnMenu {...args} />;
 
-export const MenuExample = Template.bind({});
-MenuExample.args = {
+export const Default = Template.bind({});
+Default.args = {
   logoUrl: "https://a.storyblok.com/f/89137/x/e1adbda50a/anima-logo.svg",
   logoLink: "https://www.animaapp.com/",
   sections: [

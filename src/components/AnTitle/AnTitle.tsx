@@ -16,9 +16,8 @@ type AnTitleProps = {
     | "justify"
     | "match-parent";
   order?: 1 | 2 | 3 | 4 | 5 | 6;
-  size?: string;
   weight?: string;
-  italic?: boolean;
+  size?: number | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 };
 export const AnTitle = ({ label, ...props }: AnTitleProps) => {
   return <Title {...props}>{label}</Title>;

@@ -19,19 +19,7 @@ const Template: ComponentStory<typeof AnButton> = (args) => (
   <AnButton {...args} />
 );
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Default = Template.bind({});
+Default.args = {
   children: "Button",
-};
-
-export const Outlined = Template.bind({});
-Outlined.args = {
-  children: "Button",
-  variant: "outline",
-};
-
-export const Link = Template.bind({});
-Link.args = {
-  children: "Button",
-  variant: "subtle",
 };

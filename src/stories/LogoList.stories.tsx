@@ -12,8 +12,8 @@ const Template: ComponentStory<typeof AnLogoList> = (args) => (
   <AnLogoList {...args} />
 );
 
-export const LogoList = Template.bind({});
-LogoList.args = {
+export const Default = Template.bind({});
+Default.args = {
   items: [
     { name: 'Apple', url: 'https://a.storyblok.com/f/89137/x/521b76a1c0/apple-logo.svg' },
     { name: 'Netflix', url: 'https://a.storyblok.com/f/89137/x/40792874be/netflix-logo.svg' },

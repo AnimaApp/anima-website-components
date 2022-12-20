@@ -20,6 +20,6 @@ type AnTextProps = {
   weight?: string;
   italic?: boolean;
 };
-export const AnText = ({ text, ...props }: AnTextProps) => {
-  return <Text {...props}>{text}</Text>;
+export const AnText = ({ text, size, ...props }: AnTextProps) => {
+  return <Text fz={size} {...props}>{text}</Text>;
 };

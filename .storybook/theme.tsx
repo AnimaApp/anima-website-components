@@ -9,6 +9,23 @@ import "@animaapp/anima-design-tokens/dist/tokens.css";
 
 export const theme: MantineThemeOverride = {
   fontFamily: `'Roslindale', sans-serif`,
+  fontSizes: {
+    xs: 10,
+    sm: 12,
+    md: 14,
+    lg: 16,
+    xl: 20,
+  },
+  headings: {
+    sizes: {
+      h1: { fontSize: 72, lineHeight: 1.4 },
+      h2: { fontSize: 50, lineHeight: 1.5 },
+      h3: { fontSize: 40, lineHeight: 1.5 },
+      h4: { fontSize: 32, lineHeight: 1.5 },
+      h5: { fontSize: 20, lineHeight: 1.5 },
+      h6: { fontSize: 12, lineHeight: 1.5 },
+    },
+  },
   components: {
     Text: {
       styles: (theme, params: TextStylesParams) => ({
