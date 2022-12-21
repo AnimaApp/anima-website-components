@@ -1,7 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Image, Title, Text, Stack } from "@mantine/core";
 
-import { AnCard, AnFeatureList } from "../components";
+import { AnCard } from "../components";
 
 export default {
   title: "Anima/AnCard",
@@ -30,20 +29,23 @@ export default {
         type: "file",
       },
     },
+    bodyImgUrl: {
+      control: {
+        type: "file",
+      },
+    },
   },
 } as ComponentMeta<typeof AnCard>;
 
 const Template: ComponentStory<typeof AnCard> = (args) => <AnCard {...args} />;
 
-export const CardWithImage = Template.bind({});
-CardWithImage.args = {
+export const Default = Template.bind({});
+Default.args = {
   title: "Frontend Development Automation",
   dividerVariant: "solidRed",
   dividerSize: "sm",
-  children: (
-    <Image
-      src="https://bit.ly/2Z4KKcF"
-      alt="Rear view of modern home with pool"
-    />
-  ),
+  bodyImgUrl: "https://bit.ly/2Z4KKcF",
+  titleImgUrl: "https://cdn-images-1.medium.com/fit/c/336/336/1*JaXpZQj5wNG_QPd9C2Hegg.png",
+  validFeatures: ['Devs get code, not images'],
+  invalidFeatures: ['A lot lost in translation'],
 };

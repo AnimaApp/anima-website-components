@@ -21,6 +21,9 @@ const Template: ComponentStory<typeof AnQuote> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   text: "“Anima just turned any backend developer to a fullstack, and will save precious time to production.”",
+  
+  articleTitle: "Gartner, “Design-to-code” article.",
+  articleDate: "Nov 2022",
   authorName: "Amit Ben",
   authorTitle: "CEO @ OneAI.com",
   authorProfileImageUrl:

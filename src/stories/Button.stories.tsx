@@ -12,6 +12,12 @@ export default {
         options: ["filled", "light", "outline", "default", "subtle"],
       },
     },
+    size: {
+      control: {
+        type: "select",
+        options: [null, "xs", "sm", "md", "lg", "xl"],
+      },
+    },
   },
 } as ComponentMeta<typeof AnButton>;
 

@@ -15,7 +15,7 @@ export const AnLogoList = ({ items }: AnLogoListProps) => {
       <Divider my="xl" color={"var(--white)"} />
       <SimpleGrid
         breakpoints={[
-          { maxWidth: "md", cols: 3, spacing: "lg" },
+          { maxWidth: "md", cols: 6, spacing: "sm" },
           { maxWidth: "sm", cols: 2, spacing: "lg" },
           { maxWidth: "xs", cols: 1, spacing: "lg" },
         ]}
@@ -27,8 +27,8 @@ export const AnLogoList = ({ items }: AnLogoListProps) => {
             key={index}
             src={item.url}
             alt={item.name}
-            style={{ justifySelf: "center" }}
-            fit="contain"
+            fit="scale-down"
+            style={{ justifySelf: "center", width: '160px', height: '80px', objectFit: 'scale-down' }}
             height={80}
             width={160}
           />

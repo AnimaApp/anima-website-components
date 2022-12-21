@@ -8,7 +8,14 @@ type AnQuoteProps = {
   articleTitle: string;
   articleDate: string;
 };
-export const AnQuote = ({ text, authorName, authorTitle, authorProfileImageUrl, articleTitle, articleDate }: AnQuoteProps) => {
+export const AnQuote = ({
+  text,
+  authorName,
+  authorTitle,
+  authorProfileImageUrl,
+  articleTitle,
+  articleDate,
+}: AnQuoteProps) => {
   return (
     <Box
       sx={(theme) => ({
@@ -75,15 +82,24 @@ export const AnQuote = ({ text, authorName, authorTitle, authorProfileImageUrl, 
             </Box>
           )}
           {articleTitle && (
-            <Box
-              sx={(theme) => ({
-                color: "var(--amber-7)",
-              })}
-            >
-              <Text size={16} weight={700} mt={2}>
+            <Box>
+              <Text
+                size={16}
+                weight={700}
+                mt={2}
+                sx={(theme) => ({
+                  color: "var(--amber-7)",
+                })}
+              >
                 {articleTitle}
               </Text>
-              <Text size={16} mt={1}>
+              <Text
+                size={16}
+                mt={1}
+                sx={(theme) => ({
+                  color: "var(--amber-7)",
+                })}
+              >
                 {articleDate}
               </Text>
             </Box>

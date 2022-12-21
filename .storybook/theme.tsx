@@ -22,7 +22,7 @@ export const theme: MantineThemeOverride = {
       h2: { fontSize: 50, lineHeight: 1.5 },
       h3: { fontSize: 40, lineHeight: 1.5 },
       h4: { fontSize: 32, lineHeight: 1.5 },
-      h5: { fontSize: 20, lineHeight: 1.5 },
+      h5: { fontSize: 18, lineHeight: 1.5 },
       h6: { fontSize: 12, lineHeight: 1.5 },
     },
   },
