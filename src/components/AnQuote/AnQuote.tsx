@@ -2,14 +2,18 @@ import { Box, Title, Flex, Text, Avatar } from "@mantine/core";
 
 type AnQuoteProps = {
   text: React.ReactNode;
-  authorName: string;
-  authorTitle: string;
+  authorName?: string;
+  authorTitle?: string;
   authorProfileImageUrl?: string;
-  articleTitle: string;
-  articleDate: string;
+  articleTitle?: string;
+  articleDate?: string;
+  isAnAuthorQuote?: string;
+  isAnArticleQuote?: string;
 };
 export const AnQuote = ({
   text,
+  isAnAuthorQuote,
+  isAnArticleQuote,
   authorName,
   authorTitle,
   authorProfileImageUrl,
@@ -44,7 +48,7 @@ export const AnQuote = ({
           >
             {text}
           </Title>
-          {authorName && (
+          {isAnAuthorQuote && (
             <Box
               sx={(theme) => ({
                 fontFamily: "Mulish",
@@ -81,7 +85,7 @@ export const AnQuote = ({
               </Flex>
             </Box>
           )}
-          {articleTitle && (
+          {isAnArticleQuote && (
             <Box>
               <Text
                 size={16}
