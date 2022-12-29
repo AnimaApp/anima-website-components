@@ -12,14 +12,10 @@ export default {
       },
     },
     isAnAuthorQuote: {
-      control: {
-        type: "boolean",
-      },
+      type: "boolean",
     },
     isAnArticleQuote: {
-      control: {
-        type: "boolean",
-      },
+      type: "boolean",
     },
   },
 } as ComponentMeta<typeof AnQuote>;
