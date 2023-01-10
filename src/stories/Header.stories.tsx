@@ -6,27 +6,19 @@ export default {
   component: AnTitle,
   argTypes: {
     label: {
-      control: {
-        type: "text",
-      },
+      control: "text",
     },
     size: {
-      control: {
-        type: "select",
-        options: ["h1", "h2", "h3", "h4", "h5", "h6"],
-      },
+      control: "select",
+      options: ["h1", "h2", "h3", "h4", "h5", "h6"],
     },
     weight: {
-      control: {
-        type: "select",
-        options: ["light", "regular", "medium", "semibold", "bold"],
-      },
+      control: "select",
+      options: ["light", "regular", "medium", "semibold", "bold"],
     },
     align: {
-      control: {
-        type: "select",
-        options: ["left", "center", "right"],
-      },
+      control: "select",
+      options: ["left", "center", "right"],
     },
   },
 } as ComponentMeta<typeof AnTitle>;
