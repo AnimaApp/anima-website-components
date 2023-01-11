@@ -1,0 +1,278 @@
+:root {
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --transparent: rgba(255, 255, 255, 0);
+  /* Color Scales */
+  --amber-12: #4e2009;
+  --amber-11: #ad5700;
+  --amber-10: #ed9608;
+  --amber-9: #ffb224;
+  --amber-8: #ee9d2b;
+  --amber-7: #f3b962;
+  --amber-6: #ffd285;
+  --amber-5: #ffe3a3;
+  --amber-4: #ffecbd;
+  --amber-3: #fff4d6;
+  --amber-2: #fff8eb;
+  --amber-1: #fefdfb;
+  --green-12: #153229;
+  --green-11: #18775b;
+  --green-10: #2a9877;
+  --green-9: #2aa280;
+  --green-8: #5bb99c;
+  --green-7: #92cebc;
+  --green-6: #b4dfd2;
+  --green-5: #ccebe2;
+  --green-4: #ddf3ec;
+  --green-3: #ebfaf5;
+  --green-2: #f3fcf9;
+  --green-1: #fbfefd;
+  --purple-12: #1f1249;
+  --purple-11: #5746af;
+  --purple-10: #634ec1;
+  --purple-9: #6d54cf;
+  --purple-8: #a898ec;
+  --purple-7: #c5b9f3;
+  --purple-6: #d5cdf9;
+  --purple-5: #e4defc;
+  --purple-4: #ebe7fe;
+  --purple-3: #f3f0ff;
+  --purple-2: #fbfaff;
+  --purple-1: #fcfbfe;
+  --blue-12: #08174e;
+  --blue-11: #2e4bdc;
+  --blue-10: #2663df;
+  --blue-9: #426bff;
+  --blue-8: #758ff0;
+  --blue-7: #9cadf2;
+  --blue-6: #b0c0f7;
+  --blue-5: #c7d5ff;
+  --blue-4: #dbe3ff;
+  --blue-3: #ecf0fe;
+  --blue-2: #f5f7ff;
+  --blue-1: #fafbff;
+  --grey-12: #1b1b18;
+  --grey-11: #706f6b;
+  --grey-10: #878782;
+  --grey-9: #91918d;
+  --grey-8: #c8c7c1;
+  --grey-7: #dbdbd7;
+  --grey-6: #e2e2df;
+  --grey-5: #e9e9e7;
+  --grey-4: #eeeeec;
+  --grey-3: #f3f3f2;
+  --grey-2: #f8f8f7;
+  --grey-1: #fdfdfc;
+  --tomato-12: #450a00;
+  --tomato-11: #d43029;
+  --tomato-10: #e34236;
+  --tomato-9: #f55442;
+  --tomato-8: #ff8c80;
+  --tomato-7: #ffb2a3;
+  --tomato-6: #ffc2b5;
+  --tomato-5: #ffd1c9;
+  --tomato-4: #ffded6;
+  --tomato-3: #ffede8;
+  --tomato-2: #fff5f2;
+  --tomato-1: #fffcfc;
+}
+
+[data-color-theme=light],
+.figma-light {
+  --amber-12: #4e2009;
+  --amber-11: #ad5700;
+  --amber-10: #ed9608;
+  --amber-9: #ffb224;
+  --amber-8: #ee9d2b;
+  --amber-7: #f3b962;
+  --amber-6: #ffd285;
+  --amber-5: #ffe3a3;
+  --amber-4: #ffecbd;
+  --amber-3: #fff4d6;
+  --amber-2: #fff8eb;
+  --amber-1: #fefdfb;
+  --green-12: #153229;
+  --green-11: #18775b;
+  --green-10: #2a9877;
+  --green-9: #2aa280;
+  --green-8: #5bb99c;
+  --green-7: #92cebc;
+  --green-6: #b4dfd2;
+  --green-5: #ccebe2;
+  --green-4: #ddf3ec;
+  --green-3: #ebfaf5;
+  --green-2: #f3fcf9;
+  --green-1: #fbfefd;
+  --purple-12: #1f1249;
+  --purple-11: #5746af;
+  --purple-10: #634ec1;
+  --purple-9: #6d54cf;
+  --purple-8: #a898ec;
+  --purple-7: #c5b9f3;
+  --purple-6: #d5cdf9;
+  --purple-5: #e4defc;
+  --purple-4: #ebe7fe;
+  --purple-3: #f3f0ff;
+  --purple-2: #fbfaff;
+  --purple-1: #fcfbfe;
+  --blue-12: #08174e;
+  --blue-11: #2e4bdc;
+  --blue-10: #2663df;
+  --blue-9: #426bff;
+  --blue-8: #758ff0;
+  --blue-7: #9cadf2;
+  --blue-6: #b0c0f7;
+  --blue-5: #c7d5ff;
+  --blue-4: #dbe3ff;
+  --blue-3: #ecf0fe;
+  --blue-2: #f5f7ff;
+  --blue-1: #fafbff;
+  --grey-12: #1b1b18;
+  --grey-11: #706f6b;
+  --grey-10: #878782;
+  --grey-9: #91918d;
+  --grey-8: #c8c7c1;
+  --grey-7: #dbdbd7;
+  --grey-6: #e2e2df;
+  --grey-5: #e9e9e7;
+  --grey-4: #eeeeec;
+  --grey-3: #f3f3f2;
+  --grey-2: #f8f8f7;
+  --grey-1: #fdfdfc;
+  --tomato-12: #450a00;
+  --tomato-11: #d43029;
+  --tomato-10: #e34236;
+  --tomato-9: #f55442;
+  --tomato-8: #ff8c80;
+  --tomato-7: #ffb2a3;
+  --tomato-6: #ffc2b5;
+  --tomato-5: #ffd1c9;
+  --tomato-4: #ffded6;
+  --tomato-3: #ffede8;
+  --tomato-2: #fff5f2;
+  --tomato-1: #fffcfc;
+}
+
+[data-color-theme=dark],
+.figma-dark {
+  --amber-12: #fef3dc;
+  --amber-11: #f2a20d;
+  --amber-10: #ffcb47;
+  --amber-9: #ffb224;
+  --amber-8: #804d00;
+  --amber-7: #6b4105;
+  --amber-6: #573300;
+  --amber-5: #4d2a00;
+  --amber-4: #3d2100;
+  --amber-3: #331b00;
+  --amber-2: #291800;
+  --amber-1: #1f1300;
+  --green-12: #e5fbf4;
+  --green-11: #4bc39f;
+  --green-10: #3caf8c;
+  --green-9: #2aa280;
+  --green-8: #226d56;
+  --green-7: #1b5544;
+  --green-6: #164537;
+  --green-5: #13392f;
+  --green-4: #113127;
+  --green-3: #0f2921;
+  --green-2: #0b1d18;
+  --green-1: #0c1814;
+  --purple-12: #efecfe;
+  --purple-11: #9f8dfc;
+  --purple-10: #7b65dc;
+  --purple-9: #6d54cf;
+  --purple-8: #5741c3;
+  --purple-7: #443592;
+  --purple-6: #392c72;
+  --purple-5: #32265e;
+  --purple-4: #2b224f;
+  --purple-3: #241d3e;
+  --purple-2: #1c172b;
+  --purple-1: #17151e;
+  --blue-12: #ebefff;
+  --blue-11: #5d82f8;
+  --blue-10: #5277ff;
+  --blue-9: #426bff;
+  --blue-8: #2e4ec2;
+  --blue-7: #2c4290;
+  --blue-6: #2a3d84;
+  --blue-5: #273672;
+  --blue-4: #243166;
+  --blue-3: #1d2854;
+  --blue-2: #141c39;
+  --blue-1: #111922;
+  --grey-12: #eeeeed;
+  --grey-11: #a2a19a;
+  --grey-10: #7e7d77;
+  --grey-9: #727169;
+  --grey-8: #52514c;
+  --grey-7: #3f3f3b;
+  --grey-6: #353431;
+  --grey-5: #2d2d2a;
+  --grey-4: #272725;
+  --grey-3: #222220;
+  --grey-2: #1d1d1b;
+  --grey-1: #151514;
+  --tomato-12: #ffede8;
+  --tomato-11: #ff7d66;
+  --tomato-10: #ff634f;
+  --tomato-9: #f55442;
+  --tomato-8: #ab3026;
+  --tomato-7: #832a21;
+  --tomato-6: #61211a;
+  --tomato-5: #521c17;
+  --tomato-4: #401a12;
+  --tomato-3: #33140d;
+  --tomato-2: #26140f;
+  --tomato-1: #1c0d08;
+}
+
+:root {
+  /* Fonts */
+  --text-font: "Mulish", sans-serif;
+  --heading-font: "Roslindale", cursive;
+  /* Text-size styles */
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 17px;
+  --headings-xs: 20px;
+  --headings-sm: 24px;
+  --headings-md: 30px;
+  --headings-lg: 36px;
+  --headings-xl: 43px;
+}
+
+:root {
+  /* Backwards compatibility re-mapping */
+  --base-font: var(--text-font);
+  --quirky-font: var(--heading-font);
+  --primary: var(--tomato-9);
+  --secondary: #3b3b3b;
+  --tertiary: #d8d8d8;
+  --primary-hover: #e2412e;
+  --primary-text: #3b3b3b;
+  --secondary-text: rgba(59, 59, 59, 0.4);
+  --white: #ffffff;
+  --light-container-background: #f7f7f7;
+  --green: var(--green-9);
+  --pink: var(--tomato-7);
+  --blue: var(--blue-9);
+  --yellow: var(--yellow-9);
+  --purple: var(--purple-9);
+  --red: var(--tomato-9);
+  --shadow: 0px 4px 12px rgba(59, 59, 59, 0.1);
+  --slightly-stronger-shadow: 0px 4px 12px rgba(59, 59, 59, 0.2);
+  --dark-primary-text: var(--white);
+  --dark-secondary-text: rgba(255, 255, 255, 0.4);
+  --dark-border-color: rgba(255, 255, 255, 0.4);
+  --dark-border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=tokens.css.map */
+
+
+/*# sourceMappingURL=main.2233fd1a.css.map*/
