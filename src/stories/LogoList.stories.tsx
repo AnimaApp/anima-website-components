@@ -7,10 +7,8 @@ export default {
   component: AnLogoList,
   argTypes: {
     layout: {
-      control: {
-        type: "select",
-        options: ["sm", "md", "lg"],
-      },
+      control: "select",
+      options: ["sm", "md", "lg"],
     },
   },
 } as ComponentMeta<typeof AnLogoList>;

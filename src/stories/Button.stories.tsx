@@ -7,16 +7,12 @@ export default {
   component: AnButton,
   argTypes: {
     variant: {
-      control: {
-        type: "select",
-        options: ["filled", "light", "outline", "default", "subtle"],
-      },
+      control: "select",
+      options: ["filled", "light", "outline", "default", "subtle"],
     },
     size: {
-      control: {
-        type: "select",
-        options: [null, "xs", "sm", "md", "lg", "xl"],
-      },
+      control: "select",
+      options: [null, "xs", "sm", "md", "lg", "xl"],
     },
   },
 } as ComponentMeta<typeof AnButton>;

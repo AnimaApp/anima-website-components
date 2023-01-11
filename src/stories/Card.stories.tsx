@@ -7,22 +7,16 @@ export default {
   component: AnCard,
   argTypes: {
     variant: {
-      control: {
-        type: "select",
-        options: ["filled", "highlighted"],
-      },
+      control: "select",
+      options: ["filled", "highlighted"],
     },
     dividerVariant: {
-      control: {
-        type: "select",
-        options: ["solidRed", "solidLight"],
-      },
+      control: "select",
+      options: ["solidRed", "solidLight"],
     },
     dividerSize: {
-      control: {
-        type: "select",
-        options: ["sm", "md", "lg", "xl", null],
-      },
+      control: "select",
+      options: ["sm", "md", "lg", "xl", null],
     },
     titleImgUrl: {
       control: {
@@ -45,7 +39,8 @@ Default.args = {
   dividerVariant: "solidRed",
   dividerSize: "sm",
   bodyImgUrl: "https://bit.ly/2Z4KKcF",
-  titleImgUrl: "https://cdn-images-1.medium.com/fit/c/336/336/1*JaXpZQj5wNG_QPd9C2Hegg.png",
-  validFeatures: ['Devs get code, not images'],
-  invalidFeatures: ['A lot lost in translation'],
+  titleImgUrl:
+    "https://cdn-images-1.medium.com/fit/c/336/336/1*JaXpZQj5wNG_QPd9C2Hegg.png",
+  validFeatures: ["Devs get code, not images"],
+  invalidFeatures: ["A lot lost in translation"],
 };

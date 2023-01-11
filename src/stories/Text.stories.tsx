@@ -6,27 +6,19 @@ export default {
   component: AnText,
   argTypes: {
     text: {
-      control: {
-        type: "text",
-      },
+      control: "text",
     },
     size: {
-      control: {
-        type: "select",
-        options: ["xs" , "sm" , "md" , "lg" , "xl"],
-      },
+      control: "select",
+      options: ["xs", "sm", "md", "lg", "xl"],
     },
     weight: {
-      control: {
-        type: "select",
-        options: ["light", "regular", "medium", "semibold", "bold"],
-      },
+      control: "select",
+      options: ["light", "regular", "medium", "semibold", "bold"],
     },
     align: {
-      control: {
-        type: "select",
-        options: ["left", "center", "right"],
-      },
+      control: "select",
+      options: ["left", "center", "right"],
     },
   },
 } as ComponentMeta<typeof AnText>;

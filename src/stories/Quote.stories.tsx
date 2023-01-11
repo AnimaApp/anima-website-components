@@ -7,9 +7,7 @@ export default {
   component: AnQuote,
   argTypes: {
     authorProfileImageUrl: {
-      control: {
-        type: "file",
-      },
+      control: "file",
     },
     isAnAuthorQuote: {
       type: "boolean",
